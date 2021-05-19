@@ -33,3 +33,7 @@ a {
 .button-clear {
   margin-top: 10px;
 }
+
+.filter-form-item {
+  margin-bottom: 0 !important;
+}

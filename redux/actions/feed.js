@@ -15,6 +15,19 @@ export const getFeedData = () => {
   }
 }
 
+export const filterFeed = values => {
+  return dispatch => {
+    dispatch(setFilter(values))
+  }
+}
+
+export const setFilter = values => {
+  return {
+    type: 'setFilter',
+    payload: values,
+  }
+}
+
 export const setFeedData = data => ({
   type: 'setFeedData',
   payload: [...data],
